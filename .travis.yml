@@ -1,6 +1,6 @@
 # Config adapted from:
 # https://www.electron.build/multi-platform-build#sample-travisyml-to-build-electron-app-for-macos-linux-and-windows
-sudo: true
+sudo: false
 
 matrix:
   include:
