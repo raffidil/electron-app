@@ -2,6 +2,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import styles from './Counter.css';
+import Header from './Header.js';
 
 type Props = {
   increment: () => void,
@@ -24,6 +25,7 @@ export default class Counter extends Component<Props> {
     } = this.props;
     return (
       <div>
+        <Header history={this.props.history}/>
         <div className={styles.backButton} data-tid="backButton">
           <Link to="/">
             <i className="fa fa-arrow-left fa-3x" />

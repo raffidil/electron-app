@@ -16,14 +16,14 @@ export default class MenuBuilder {
       this.setupDevelopmentEnvironment();
     }
 
-    const template = process.platform === 'darwin'
-      ? this.buildDarwinTemplate()
-      : this.buildDefaultTemplate();
-
-    const menu = Menu.buildFromTemplate(template);
-    Menu.setApplicationMenu(menu);
-
-    return menu;
+    // const template = process.platform === 'darwin'
+    //   ? this.buildDarwinTemplate()
+    //   : this.buildDefaultTemplate();
+    //
+    // const menu = Menu.buildFromTemplate(template);
+    // Menu.setApplicationMenu(menu);
+    //
+    // return menu;
   }
 
   setupDevelopmentEnvironment() {

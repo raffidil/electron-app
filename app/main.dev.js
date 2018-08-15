@@ -61,9 +61,9 @@ app.on('ready', async () => {
   }
 
   mainWindow = new BrowserWindow({
-    show: false,
+    show: true,
     width: 1024,
-    height: 728
+    height: 600
   });
 
   mainWindow.loadURL(`file://${__dirname}/app.html`);
@@ -82,6 +82,9 @@ app.on('ready', async () => {
     mainWindow = null;
   });
 
+  mainWindow.setMenuBarVisibility(false);
+  mainWindow.setAutoHideMenuBar(true);
+  
   const menuBuilder = new MenuBuilder(mainWindow);
   menuBuilder.buildMenu();
 });
